@@ -16,4 +16,6 @@ MonoBehaviour:
   isDefaultItem: 0
   equipSlot: 3
   damageResistModifier: 0
-  damageModifier: 75
+  damageModifier: 20
+  powerDamageModifier: 40
+  Money: 0

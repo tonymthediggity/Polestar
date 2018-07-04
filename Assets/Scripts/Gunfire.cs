@@ -82,6 +82,7 @@ public class Gunfire : MonoBehaviour
 
 
         damage = statsDamage.damage.GetValue();
+        powerDamage = statsDamage.powerDamage.GetValue();
 
 
 

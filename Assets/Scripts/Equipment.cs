@@ -10,6 +10,7 @@ public class Equipment : Item {
 
     public int damageResistModifier;
     public int damageModifier;
+    public int powerDamageModifier;
 
     public int Money;
 

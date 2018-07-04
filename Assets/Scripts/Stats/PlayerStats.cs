@@ -15,11 +15,13 @@ public class PlayerStats : CharacterStats {
         {
             damageResist.AddModifier(newItem.damageResistModifier);
             damage.AddModifier(newItem.damageModifier);
+            powerDamage.AddModifier(newItem.powerDamageModifier);
         }
         if(oldItem != null)
         {
             damageResist.RemoveModifier(oldItem.damageResistModifier);
             damage.RemoveModifier(oldItem.damageModifier);
+            powerDamage.RemoveModifier(oldItem.powerDamageModifier);
 
 
         }

@@ -13,6 +13,7 @@ public class CharacterStats : MonoBehaviour {
 
     public Stat damage;
     public Stat damageResist;
+    public Stat powerDamage;
    
 
 

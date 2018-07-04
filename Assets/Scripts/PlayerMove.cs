@@ -8,6 +8,7 @@ public class PlayerMove : MonoBehaviour {
     public float moveSpeed;
     public float jumpHeight;
     public Rigidbody body;
+    public bool dashLeft = false;
 
 
     public void Awake()
@@ -17,7 +18,15 @@ public class PlayerMove : MonoBehaviour {
 
     public void Update()
     {
+
+       
+
         MovePlayer();
+
+       
+
+       
+       
 
        
         
@@ -32,6 +41,8 @@ public class PlayerMove : MonoBehaviour {
         Vector3 moveDirSide = transform.right * horizontal * moveSpeed;
         Vector3 moveDirForward = transform.forward * vertical * moveSpeed;
         Vector3 moveDirJump = transform.up * vertical * jumpHeight;
+
+       
         
 
         charControl.SimpleMove(moveDirSide);
@@ -48,4 +59,6 @@ public class PlayerMove : MonoBehaviour {
 
         
     }
+
+   
 }

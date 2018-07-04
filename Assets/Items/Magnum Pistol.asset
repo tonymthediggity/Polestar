@@ -17,4 +17,5 @@ MonoBehaviour:
   equipSlot: 3
   damageResistModifier: 0
   damageModifier: 100
+  powerDamageModifier: 200
   Money: 0

@@ -20,6 +20,9 @@ public class PlayerHealth : MonoBehaviour
     public Gunfire usesTP;
     public int tpCost;
 
+   public int playerMoney;
+    GameObject moneyPrefab;
+
     int damageResistance;
 
     
@@ -28,6 +31,8 @@ public class PlayerHealth : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+
+        moneyPrefab = GameObject.FindGameObjectWithTag("Money");
 
         
 
@@ -70,6 +75,7 @@ public class PlayerHealth : MonoBehaviour
     {
 
        
+
 
         
 
