@@ -16,6 +16,7 @@ TagManager:
   - PickedUp
   - Money
   - UIMoneyText
+  - InitialSpawnPoint
   layers:
   - Default
   - TransparentFX

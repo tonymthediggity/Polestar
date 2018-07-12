@@ -35,10 +35,10 @@ public class Projectile : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player") || other.CompareTag("terrain"))
-        {
+        //if (other.CompareTag("Player") || other.CompareTag("terrain"))
+       // {
             DestroyProjectile();
-        }
+      //  }
     }
     void DestroyProjectile()
     {

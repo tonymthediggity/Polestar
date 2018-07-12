@@ -25,12 +25,16 @@ public class PlayerHealth : MonoBehaviour
 
     int damageResistance;
 
+    public CameraShake cameraShake;
+
     
 
 
     // Use this for initialization
     void Start()
     {
+
+        
 
         moneyPrefab = GameObject.FindGameObjectWithTag("Money");
 
@@ -109,6 +113,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if (other.CompareTag("enemybullet"))
         {
+            StartCoroutine(cameraShake.Shake(.15f, .4f));
             playerHealth = playerHealth - (shooter.damage - damageResistance);
         }
     }
