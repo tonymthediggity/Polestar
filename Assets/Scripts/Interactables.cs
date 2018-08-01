@@ -31,6 +31,7 @@ public class Interactables : MonoBehaviour {
         if(canInteract && Input.GetKeyDown(KeyCode.F))
         {
             Interact();
+            Debug.Log("Interacting");
         }
     }
 

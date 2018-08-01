@@ -17,7 +17,7 @@ public class SceneChange : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player") && GameObject.FindGameObjectsWithTag("enemy").Length <= 0)
+        if (other.CompareTag("Player"))//&& GameObject.FindGameObjectsWithTag("enemy").Length <= 0)
         {
             Debug.Log("Loading " + "SampleCity");
             SceneManager.LoadScene("SampleCity");

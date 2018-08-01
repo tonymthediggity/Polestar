@@ -1,13 +1,23 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.UI;
 
-public class InventorySlot : MonoBehaviour {
+public class VendorInvSlots : MonoBehaviour {
 
     public Item item;
     public Image icon;
     public Button removeButton;
 
+    private void Start()
+    {
 
+        if (item != null)
+        {
+            icon.sprite = item.icon;
+            icon.enabled = true;
+        }
+    }
 
     public void AddItem(Item newItem)
     {
@@ -38,6 +48,4 @@ public class InventorySlot : MonoBehaviour {
             item.Use();
         }
     }
-
-	
 }
