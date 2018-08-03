@@ -12,7 +12,7 @@ public class PlayerLook : MonoBehaviour {
 
     private void Awake()
     {
-        Cursor.lockState = CursorLockMode.Locked;
+       // Cursor.lockState = CursorLockMode.Locked;
 
       /*  if (Input.GetKeyDown(KeyCode.Escape))
         {
@@ -25,10 +25,10 @@ public class PlayerLook : MonoBehaviour {
 
        
 
-        RotateCamera();
+       // RotateCamera();
     }
 
-    void RotateCamera()
+    /*void RotateCamera()
     {
 
         float mouseX = Input.GetAxis("Mouse X");
@@ -45,7 +45,7 @@ public class PlayerLook : MonoBehaviour {
 
         targetRotation.x -= rotateAmountY;
         targetRotation.z = 0;
-        //targetRotation.y += rotateAmountX;
+        targetRotation.y += rotateAmountX;
         targetRotationBody.y += rotateAmountX;
 
         if (xAxisClamp > 45)
@@ -63,7 +63,7 @@ public class PlayerLook : MonoBehaviour {
         transform.rotation = Quaternion.Euler(targetRotation);
         playerBody.rotation = Quaternion.Euler(targetRotationBody);
 
-    }
+    }*/
 
     }
 

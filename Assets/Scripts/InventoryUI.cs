@@ -42,7 +42,7 @@ public class InventoryUI : MonoBehaviour {
         {
 
             inventoryIsOpen = true;
-            Cursor.lockState = CursorLockMode.None;
+           // Cursor.lockState = CursorLockMode.None;
             InvUI.SetActive(true);
             player.GetComponent<Gunfire>().enabled = false;
             player.GetComponentInChildren<PlayerLook>().enabled = false;
@@ -55,7 +55,7 @@ public class InventoryUI : MonoBehaviour {
            
 
                 inventoryIsOpen = false;
-                Cursor.lockState = CursorLockMode.Locked;
+                //Cursor.lockState = CursorLockMode.Locked;
                 InvUI.SetActive(false);
                 player.GetComponent<Gunfire>().enabled = true;
                 player.GetComponentInChildren<PlayerLook>().enabled = true;

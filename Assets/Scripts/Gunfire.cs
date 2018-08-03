@@ -35,6 +35,7 @@ public class Gunfire : MonoBehaviour
 
     CharacterStats statsDamage;
     GameObject player;
+    public Camera isoCamera;
 
 
 
@@ -55,7 +56,7 @@ public class Gunfire : MonoBehaviour
         
        
 
-        cam = FindObjectOfType <Camera>();
+       // cam = FindObjectOfType <Camera>();
         firePoint = GameObject.FindGameObjectWithTag("PFP");
         hit = new RaycastHit();
 
@@ -118,7 +119,7 @@ public class Gunfire : MonoBehaviour
 
         if (Input.GetButtonDown("Fire1") && coolDownTimer == 0)
         {
-            Ray ray = GetComponentInChildren<Camera>().ScreenPointToRay(Input.mousePosition);
+            Ray ray = isoCamera.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out hit)) { 
 
             bulletClone = Instantiate(bulletPrefab, firePoint.transform.position, Quaternion.identity) as GameObject;
@@ -212,7 +213,7 @@ public class Gunfire : MonoBehaviour
 
     void PowerAttack() {
 
-         Ray ray = GetComponentInChildren<Camera>().ScreenPointToRay(Input.mousePosition);
+         Ray ray = isoCamera.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out hit))
             {
 
